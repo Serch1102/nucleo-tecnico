@@ -1,0 +1,35 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.4",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "[High] Alerta Cortex XSIAM",
+      "weight": "Bolder",
+      "size": "Medium"
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        { "title": "Cliente", "value": "Cliente A" },
+        { "title": "Alerta", "value": "Suspicious PowerShell Execution" },
+        { "title": "Case ID", "value": "CASE-12345" },
+        { "title": "Host", "value": "HOST-001" },
+        { "title": "Usuario", "value": "dominio\\\\usuario" }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "PowerShell ejecutado con parámetros sospechosos. Revisar proceso padre, usuario y conexiones.",
+      "wrap": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "Abrir en XSIAM",
+      "url": "https://xsiam.example/case/CASE-12345"
+    }
+  ]
+}
+

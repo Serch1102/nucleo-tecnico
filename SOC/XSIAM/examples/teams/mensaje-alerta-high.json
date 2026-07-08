@@ -1,0 +1,14 @@
+{
+  "severity": "High",
+  "client": "Cliente A",
+  "alert_name": "Suspicious PowerShell Execution",
+  "case_id": "CASE-12345",
+  "host": "HOST-001",
+  "user": "dominio\\usuario",
+  "src_ip": "10.0.1.10",
+  "dst_ip": "8.8.8.8",
+  "summary": "PowerShell ejecutado con parámetros sospechosos. Validar proceso padre, usuario y conexiones.",
+  "expected_action": "Revisar el case en XSIAM y confirmar si la actividad es legítima.",
+  "xsiam_link": "https://xsiam.example/case/CASE-12345"
+}
+

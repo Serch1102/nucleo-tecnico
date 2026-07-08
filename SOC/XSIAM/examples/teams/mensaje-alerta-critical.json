@@ -1,0 +1,14 @@
+{
+  "severity": "Critical",
+  "client": "Cliente A",
+  "alert_name": "Possible Lateral Movement",
+  "case_id": "CASE-99999",
+  "host": "HOST-CRITICAL-01",
+  "user": "dominio\\admin",
+  "src_ip": "10.0.5.20",
+  "dst_ip": "10.0.8.30",
+  "summary": "Actividad compatible con movimiento lateral hacia un activo crítico.",
+  "expected_action": "Escalar a L2/L3, revisar evidencias y valorar contención con aprobación.",
+  "xsiam_link": "https://xsiam.example/case/CASE-99999"
+}
+
