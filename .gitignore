@@ -1,0 +1,22 @@
+# Obsidian local state
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspaces.json
+.obsidian/cache/
+.obsidian/logs/
+
+# Obsidian downloaded community plugin/theme code
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/styles.css
+.obsidian/plugins/*/icons/
+.obsidian/themes/*/theme.css
+
+# Obsidian accidental scratch files
+Sin título*
+Untitled*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
