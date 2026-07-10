@@ -84,7 +84,5 @@ Si un firewall registra una conexión a una IP sospechosa, Elastic puede ayudar 
 
 - TODO: validar con documentación oficial de Elastic los nombres actuales de componentes y capacidades por licencia.
 - TODO: añadir diagrama Mermaid cuando se documente la arquitectura completa.
-- TODO: enlazar con [[01-componentes-elastic-stack]] cuando esté creada.
 
 Relacionado: [[README]], [[01-componentes-elastic-stack]], [[02-kql-para-soc]].
-

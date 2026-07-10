@@ -15,20 +15,29 @@ Carpeta de estudio y operación sobre Elastic Stack aplicado a SIEM, KQL para an
 ## Orden recomendado de lectura
 
 1. [[00-elastic-stack-como-siem]]
-2. `01-componentes-elastic-stack.md` TODO
-3. `02-kql-para-soc.md` TODO
-4. `03-use-case-development-siem.md` TODO
-5. `04-ejemplos-deteccion-msbuild.md` TODO
+2. [[01-componentes-elastic-stack]]
+3. [[02-kql-para-soc]]
+4. [[03-use-case-development-siem]]
+5. [[04-ejemplos-deteccion-msbuild]]
 
 ## Estado
 
 | Nota | Estado |
 |---|---|
 | [[00-elastic-stack-como-siem]] | Primera versión |
-| `01-componentes-elastic-stack.md` | TODO |
-| `02-kql-para-soc.md` | TODO |
-| `03-use-case-development-siem.md` | TODO |
-| `04-ejemplos-deteccion-msbuild.md` | TODO |
+| [[01-componentes-elastic-stack]] | Primera versión |
+| [[02-kql-para-soc]] | Primera versión |
+| [[03-use-case-development-siem]] | Primera versión |
+| [[04-ejemplos-deteccion-msbuild]] | Primera versión |
 
-Relacionado: [[00-elastic-stack-como-siem]].
+## Relación entre notas
 
+```text
+Elastic como SIEM
+-> Componentes
+-> KQL para análisis
+-> Desarrollo de casos de uso
+-> Ejemplos de detección MSBuild
+```
+
+Relacionado: [[00-elastic-stack-como-siem]], [[02-kql-para-soc]], [[03-use-case-development-siem]].
