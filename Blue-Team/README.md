@@ -6,14 +6,15 @@
 
 | Sección | Contenido |
 |---|---|
+| [[Redes]] | Fundamentos de redes para análisis SOC |
 | [[SIEM]] | Plataformas SIEM, lenguajes de consulta, detecciones y operación SOC |
 
 ## Uso recomendado
 
 1. Empezar por conceptos de SIEM.
-2. Pasar a plataformas concretas como [[Elastic]] y [[Cortex-XSIAM]].
-3. Practicar consultas y casos de uso.
-4. Documentar SOP, criterios TP/FP y fine-tuning.
+2. Reforzar fundamentos con [[Redes]].
+3. Pasar a plataformas concretas como [[Elastic]] y [[Cortex-XSIAM]].
+4. Practicar consultas y casos de uso.
+5. Documentar SOP, criterios TP/FP y fine-tuning.
 
-Relacionado: [[SIEM]].
-
+Relacionado: [[Redes]], [[SIEM]].
