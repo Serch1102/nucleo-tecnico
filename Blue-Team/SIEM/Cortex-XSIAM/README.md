@@ -2,7 +2,7 @@
 
 Base de conocimiento práctica sobre Cortex XSIAM para analistas SOC junior e intermedios.
 
-Esta sección de `nucleo-tecnico` está pensada para aprender rápido, operar mejor y documentar decisiones reales durante el análisis de alertas, cases e incidents en Cortex XSIAM/XSOAR.
+Esta sección de `nucleo-tecnico` vive dentro de `Blue-Team/SIEM` y está pensada para aprender rápido, operar mejor y documentar decisiones reales durante el análisis de alertas, cases e incidents en Cortex XSIAM/XSOAR.
 
 > [!NOTE]
 > La documentación es modular y compatible con Obsidian. Usa enlaces internos como [[que-es-cortex-xsiam]], [[introduccion-xql]] y [[propuesta-mvp]] para construir un grafo de conocimiento técnico.
@@ -75,3 +75,5 @@ Esta sección de `nucleo-tecnico` está pensada para aprender rápido, operar me
 Versión inicial del repositorio: `0.1.0`.
 
 Ver [[mapa-de-aprendizaje]] para el recorrido recomendado.
+
+Relacionado: [[SIEM]], [[Elastic]].
