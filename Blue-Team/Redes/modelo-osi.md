@@ -529,4 +529,4 @@ La idea más importante:
 
 > El modelo OSI no se memoriza para recitarlo. Se usa para ordenar problemas, investigaciones y evidencias.
 
-Relacionado: [[README]], [[SIEM]].
+Relacionado: [[Redes]], [[Blue-Team]], [[SIEM]].
