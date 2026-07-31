@@ -6,6 +6,7 @@ Mapa principal del área defensiva del repositorio.
 
 | Área | Qué contiene |
 |---|---|
+| [[Detection-Engineering]] | Hipótesis de detección, lógica defensiva y equivalencias entre herramientas |
 | [[Redes]] | Fundamentos de red para entender tráfico, conectividad y evidencias |
 | [[Windows]] | Eventos, seguridad y análisis de sistemas Windows |
 | [[SIEM]] | Plataformas SIEM, consultas, detecciones y operación SOC |
@@ -17,9 +18,10 @@ flowchart LR
   BT["Blue Team"] --> Redes["Redes"]
   BT --> Windows["Windows"]
   BT --> SIEM["SIEM"]
+  BT --> DE["Detection Engineering"]
   SIEM --> Elastic["Elastic"]
   SIEM --> XSIAM["Cortex-XSIAM"]
+  DE --> WindowsDE["Windows detection notes"]
 ```
 
-Relacionado: [[Redes]], [[Windows]], [[SIEM]], [[Elastic]], [[Cortex-XSIAM]].
-
+Relacionado: [[Detection-Engineering]], [[Redes]], [[Windows]], [[SIEM]], [[Elastic]], [[Cortex-XSIAM]].
