@@ -21,6 +21,27 @@ Esta entrada no pretende memorizar todos los Event IDs. La idea es tener una lis
 | Persistencia | `4698`, `4700`, `4701`, `4702`, `7045` | Tareas programadas y servicios nuevos |
 | Recursos compartidos / red | `5140`, `5142`, `5145`, `5157` | Shares, accesos y conexiones bloqueadas |
 
+## Apoyo visual: mapa de eventos
+
+```mermaid
+flowchart TB
+  W["Eventos Windows útiles para SOC"]
+
+  W --> SYS["Sistema<br/>1074, 6005, 6006, 6013, 7040"]
+  W --> AUTH["Autenticación<br/>4624, 4625, 4648, 4771, 4776"]
+  W --> PRIV["Privilegios y cuentas<br/>4672, 4738"]
+  W --> AUDIT["Auditoría / ocultación<br/>1102, 4719"]
+  W --> DEF["Defender / AV<br/>1116, 1118, 1119, 1120, 5001"]
+  W --> PERSIST["Persistencia<br/>4698, 4700, 4701, 4702, 7045"]
+  W --> NET["Recursos compartidos / red<br/>5140, 5142, 5145, 5157"]
+
+  AUTH --> A1["Validar accesos y fallos"]
+  AUDIT --> A2["Detectar pérdida de visibilidad"]
+  PERSIST --> A3["Buscar persistencia"]
+  DEF --> A4["Confirmar malware y remediación"]
+  NET --> A5["Revisar shares y conexiones"]
+```
+
 > [!WARNING]
 > La disponibilidad de eventos depende de políticas de auditoría, configuración de Windows, versión del sistema, Sysmon/EDR, forwarding y normalización en el SIEM.
 
@@ -223,6 +244,39 @@ Ejemplos:
 | `1116` + `1120` | Malware detectado pero no remediado |
 | `5001` + detección malware | Posible intento de debilitar protección |
 
+## Apoyo visual: cadenas de investigación
+
+```mermaid
+flowchart LR
+  BF["4625 repetido<br/>Fallos de logon"] --> OK["4624 exitoso<br/>Acceso válido"]
+  OK --> DEC1["Investigar posible fuerza bruta exitosa"]
+
+  ADMIN["4672<br/>Logon privilegiado"] --> CLEAR["1102<br/>Log borrado"]
+  CLEAR --> DEC2["Prioridad alta: posible ocultación"]
+
+  DOC["Documento o proceso sospechoso"] --> TASK["4698<br/>Tarea programada"]
+  DOC --> SVC["7045<br/>Servicio instalado"]
+  TASK --> DEC3["Revisar persistencia"]
+  SVC --> DEC3
+
+  MAL["1116<br/>Malware detectado"] --> FAIL["1120<br/>Remediación fallida"]
+  FAIL --> DEC4["Contención o revisión urgente"]
+```
+
+## Apoyo visual: flujo básico de triage
+
+```mermaid
+flowchart TD
+  E["Event ID relevante"] --> H["Identificar host"]
+  H --> U["Identificar usuario"]
+  U --> T["Ubicar timestamp"]
+  T --> C["Buscar eventos antes/después"]
+  C --> X["Correlacionar con EDR, SIEM, proxy, DNS o firewall"]
+  X --> B{"¿Existe explicación legítima?"}
+  B -->|Sí| FP["Documentar FP o Benign TP"]
+  B -->|No| TP["Escalar como sospechoso / TP"]
+```
+
 ## Resumen final
 
 ```text
@@ -243,4 +297,3 @@ La idea más importante:
 > Un Event ID es una pista. La investigación SOC empieza cuando lo conectas con contexto.
 
 Relacionado: [[Windows]], [[SIEM]], [[Elastic]], [[Cortex-XSIAM]].
-

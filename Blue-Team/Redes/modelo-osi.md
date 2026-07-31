@@ -48,6 +48,21 @@ Cada capa tiene una responsabilidad distinta.
 | 2 | Enlace de datos | ¿Cómo se entrega en la red local? | Ethernet, Wi-Fi, MAC, VLAN |
 | 1 | Física | ¿Cómo viaja la señal? | Cable, fibra, radio, conectores |
 
+## Apoyo visual: las 7 capas
+
+```mermaid
+flowchart TB
+  L7["7. Aplicación<br/>HTTP, DNS, SMTP, SSH<br/>Qué quiere hacer la app"]
+  L6["6. Presentación<br/>TLS, cifrado, compresión<br/>Cómo se representa el dato"]
+  L5["5. Sesión<br/>Login, token, cookie<br/>Cómo se mantiene la conversación"]
+  L4["4. Transporte<br/>TCP, UDP, puertos<br/>Cómo se entrega entre procesos"]
+  L3["3. Red<br/>IP, ICMP, routing<br/>Cómo se enruta entre redes"]
+  L2["2. Enlace de datos<br/>Ethernet, Wi-Fi, MAC, VLAN<br/>Cómo se entrega en la LAN"]
+  L1["1. Física<br/>Cable, fibra, radio<br/>Cómo viaja la señal"]
+
+  L7 --> L6 --> L5 --> L4 --> L3 --> L2 --> L1
+```
+
 ## Analogía sencilla
 
 Enviar datos por red se parece a enviar un paquete:
@@ -394,6 +409,19 @@ En SOC puro se ve menos que otras capas, pero importa en:
 
 Cuando un dato baja por las capas, cada capa añade información.
 
+```mermaid
+flowchart TB
+  A["Datos de aplicación<br/>HTTP, DNS, SSH"] --> B["Segmento TCP/UDP<br/>Puerto origen/destino"]
+  B --> C["Paquete IP<br/>IP origen/destino"]
+  C --> D["Trama Ethernet/Wi-Fi<br/>MAC origen/destino"]
+  D --> E["Bits / señal física<br/>Cable, fibra o radio"]
+
+  E -. "desencapsulación en destino" .-> D
+  D -.-> C
+  C -.-> B
+  B -.-> A
+```
+
 ```text
 Datos de aplicación
 -> Segmento TCP/UDP
@@ -432,6 +460,25 @@ En la práctica también se usa el modelo TCP/IP, que agrupa capas.
 ## Cómo usar OSI durante una investigación SOC
 
 ### Caso: alerta de conexión sospechosa
+
+```mermaid
+flowchart LR
+  Alert["Alerta: conexión sospechosa"] --> App["Capa 7<br/>Dominio, URL, usuario, proceso"]
+  Alert --> Pres["Capa 6<br/>TLS, certificado, SNI"]
+  Alert --> Sess["Capa 5<br/>Sesión, token, duración"]
+  Alert --> Trans["Capa 4<br/>TCP/UDP, puerto, handshake"]
+  Alert --> Net["Capa 3<br/>IP, ASN, geolocalización"]
+  Alert --> Link["Capa 2<br/>MAC, VLAN, segmento"]
+  Alert --> Phys["Capa 1<br/>Enlace físico, Wi-Fi"]
+
+  App --> Decision["Contexto suficiente para decidir TP/FP"]
+  Pres --> Decision
+  Sess --> Decision
+  Trans --> Decision
+  Net --> Decision
+  Link --> Decision
+  Phys --> Decision
+```
 
 | Capa | Qué revisar |
 |---|---|
@@ -483,4 +530,3 @@ La idea más importante:
 > El modelo OSI no se memoriza para recitarlo. Se usa para ordenar problemas, investigaciones y evidencias.
 
 Relacionado: [[README]], [[SIEM]].
-
