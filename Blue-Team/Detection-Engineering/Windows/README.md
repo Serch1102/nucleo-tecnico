@@ -31,4 +31,4 @@ Organizar conceptos prácticos para investigar:
 Proceso + Ruta + Usuario + Padre + Acción + Contexto = Veredicto
 ```
 
-Relacionado: [[Detection-Engineering]], [[Windows]], [[SIEM]], [[Cortex-XSIAM]], [[ETW]], [[Sysmon]].
+Relacionado: [[Detection-Engineering]], [[Windows]], [[SIEM]], [[Cortex-XSIAM]], [[etw-event-tracing-for-windows]], [[conceptos-basicos-sysmon]].
