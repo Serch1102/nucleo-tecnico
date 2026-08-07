@@ -10,6 +10,8 @@ Organizar conceptos prácticos para investigar:
 - Posible inyección PowerShell/C# o ejecución in-memory.
 - Acceso sospechoso a `lsass.exe`.
 - Credential dumping basado en comportamiento, no en nombre de herramienta.
+- Relaciones padre-hijo anómalas y posible manipulación de linaje de procesos.
+- Uso de ETW para complementar Sysmon en hunting y DFIR.
 - Equivalencias entre Trend Micro Vision One, Cortex XSIAM/XDR y Microsoft Sentinel.
 
 > [!WARNING]
@@ -21,6 +23,7 @@ Organizar conceptos prácticos para investigar:
 2. [[01-deteccion-dotnet-runtime-anomalo]]
 3. [[02-deteccion-credential-dumping-lsass]]
 4. [[03-equivalencias-tmv1-cortex-sentinel]]
+5. [[04-etw-parent-pid-spoofing-y-dotnet-assemblies]]
 
 ## Regla mental
 
@@ -28,5 +31,4 @@ Organizar conceptos prácticos para investigar:
 Proceso + Ruta + Usuario + Padre + Acción + Contexto = Veredicto
 ```
 
-Relacionado: [[Detection-Engineering]], [[Windows]], [[SIEM]], [[Cortex-XSIAM]].
-
+Relacionado: [[Detection-Engineering]], [[Windows]], [[SIEM]], [[Cortex-XSIAM]], [[ETW]], [[Sysmon]].
