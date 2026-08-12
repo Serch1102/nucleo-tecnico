@@ -12,6 +12,8 @@ Organizar conceptos prácticos para investigar:
 - Credential dumping basado en comportamiento, no en nombre de herramienta.
 - Relaciones padre-hijo anómalas y posible manipulación de linaje de procesos.
 - Uso de ETW para complementar Sysmon en hunting y DFIR.
+- Uso de `Get-WinEvent` para consultar logs Windows, Sysmon, ETW y `.evtx`.
+- Comparativa práctica entre `Get-WinEvent`, ETW, Sysmon y SilkETW.
 - Equivalencias entre Trend Micro Vision One, Cortex XSIAM/XDR y Microsoft Sentinel.
 
 > [!WARNING]
@@ -24,6 +26,7 @@ Organizar conceptos prácticos para investigar:
 3. [[02-deteccion-credential-dumping-lsass]]
 4. [[03-equivalencias-tmv1-cortex-sentinel]]
 5. [[04-etw-parent-pid-spoofing-y-dotnet-assemblies]]
+6. [[05-comparativa-get-winevent-etw-sysmon]]
 
 ## Regla mental
 
@@ -31,4 +34,13 @@ Organizar conceptos prácticos para investigar:
 Proceso + Ruta + Usuario + Padre + Acción + Contexto = Veredicto
 ```
 
-Relacionado: [[Detection-Engineering]], [[Windows]], [[SIEM]], [[Cortex-XSIAM]], [[etw-event-tracing-for-windows]], [[conceptos-basicos-sysmon]].
+## Regla de fuentes de telemetría
+
+```text
+Get-WinEvent consulta eventos.
+Sysmon genera eventos defensivos enriquecidos.
+ETW expone telemetría profunda de Windows.
+SilkETW consume ETW para capturar datos específicos.
+```
+
+Relacionado: [[Detection-Engineering]], [[Windows]], [[SIEM]], [[Cortex-XSIAM]], [[etw-event-tracing-for-windows]], [[conceptos-basicos-sysmon]], [[Get-WinEvent]].
