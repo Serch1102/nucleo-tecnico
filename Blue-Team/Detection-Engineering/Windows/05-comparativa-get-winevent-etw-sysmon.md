@@ -4,11 +4,14 @@
 
 Esta nota resume y compara tres piezas importantes de telemetría Windows para investigación SOC, threat hunting y preparación CDSA:
 
-- `Get-WinEvent`
-- `ETW` / Event Tracing for Windows
-- `Sysmon`
+- [[get-winevent]]
+- [[etw-event-tracing-for-windows|ETW]] / Event Tracing for Windows
+- [[conceptos-basicos-sysmon|Sysmon]]
 
 La idea no es memorizarlas como herramientas sueltas, sino entender cómo se complementan cuando investigamos procesos, DLLs, conexiones, PowerShell, .NET, LSASS o eventos exportados `.evtx`.
+
+> [!NOTE]
+> Esta entrada es una comparativa práctica. Para profundizar en cada fuente, salta a [[get-winevent]], [[etw-event-tracing-for-windows]] y [[conceptos-basicos-sysmon]].
 
 ---
 
@@ -167,6 +170,9 @@ En el ejemplo del módulo, `Properties[21]` corresponde a `ParentCommandLine` en
 
 `-enc` suele relacionarse con `-EncodedCommand`, muy usado para ofuscar comandos PowerShell.
 
+> [!WARNING]
+> En el ejemplo anterior, `Properties[21]` procede de un caso concreto de Sysmon ID 1. Antes de usarlo en otro entorno, valida el XML del evento con `ToXml()` y confirma qué campo ocupa cada posición.
+
 ---
 
 ## 2. Sysmon
@@ -174,6 +180,9 @@ En el ejemplo del módulo, `Properties[21]` corresponde a `ParentCommandLine` en
 Sysmon es una herramienta de Microsoft Sysinternals que se instala en Windows para generar eventos más ricos para detección.
 
 No sustituye a los logs nativos. Los complementa.
+
+> [!NOTE]
+> La visibilidad de Sysmon depende de que esté instalado, activo y configurado correctamente. No todos los entornos registran los mismos Event IDs.
 
 ### Eventos Sysmon útiles
 
@@ -253,6 +262,9 @@ ETW significa `Event Tracing for Windows`.
 
 Es una infraestructura interna de Windows para tracing de alto rendimiento. Está más abajo que muchas herramientas de log tradicionales.
 
+> [!WARNING]
+> ETW puede requerir permisos elevados y herramientas específicas para capturar o consumir determinados providers. En producción, valida impacto, permisos y retención antes de usarlo como fuente operativa.
+
 ### Componentes principales
 
 | Componente | Explicación |
@@ -306,6 +318,9 @@ logman.exe query providers Microsoft-Windows-Winlogon
 SilkETW es una herramienta para consumir eventos ETW y guardarlos, por ejemplo, en JSON.
 
 En los labs se usa para capturar providers concretos.
+
+> [!NOTE]
+> SilkETW se menciona como herramienta de laboratorio. En un SOC real, la forma de capturar ETW puede variar según EDR, SIEM, agente, política corporativa y permisos.
 
 ### Ejemplo: Kernel Process
 
@@ -392,6 +407,9 @@ Explicación:
 | .NET interno | Difícil salvo ETW ingest | Depende de sensor/dataset | Depende de telemetría EDR |
 | Investigación manual local | `Get-WinEvent` / PowerShell | Endpoint data + XQL | Workbench + telemetry |
 
+> [!WARNING]
+> Los nombres de datasets, campos y vistas en Cortex XSIAM/XDR pueden variar según tenant, licencia, integración y producto. Validar siempre en el entorno real antes de convertir esta tabla en detección.
+
 ---
 
 ## 7. Cuándo usar cada uno
@@ -462,3 +480,14 @@ Y para investigar:
 ```text
 Proceso + Ruta + Usuario + Padre + Acción + Tiempo + Fuente = Veredicto
 ```
+
+## Relacionado
+
+- [[get-winevent]]
+- [[conceptos-basicos-sysmon]]
+- [[etw-event-tracing-for-windows]]
+- [[04-etw-parent-pid-spoofing-y-dotnet-assemblies]]
+- [[03-equivalencias-tmv1-cortex-sentinel]]
+- [[Windows]]
+- [[Detection-Engineering]]
+- [[Cortex-XSIAM]]

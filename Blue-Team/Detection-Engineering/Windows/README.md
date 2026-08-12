@@ -43,4 +43,4 @@ ETW expone telemetría profunda de Windows.
 SilkETW consume ETW para capturar datos específicos.
 ```
 
-Relacionado: [[Detection-Engineering]], [[Windows]], [[SIEM]], [[Cortex-XSIAM]], [[etw-event-tracing-for-windows]], [[conceptos-basicos-sysmon]], [[Get-WinEvent]].
+Relacionado: [[Detection-Engineering]], [[Windows]], [[SIEM]], [[Cortex-XSIAM]], [[etw-event-tracing-for-windows]], [[conceptos-basicos-sysmon]], [[get-winevent]].
