@@ -16,6 +16,20 @@ La meta es demostrar que sabes:
 > [!WARNING]
 > No asumir condiciones exactas del examen o del voucher desde apuntes personales. Duración, intentos, validez, reglas, entorno y formato pueden cambiar. Validar siempre en Hack The Box Academy antes de usar el voucher.
 
+## Datos públicos importantes
+
+| Punto | Valor a tener en cuenta |
+|---|---|
+| Ventana de examen | 7 días desde el inicio |
+| Reporte | Obligatorio, profesional y en inglés |
+| Formato de entrega | PDF/ZIP sin contraseña, máximo 20 MB |
+| Evaluación | Puntos/flags + calidad del informe |
+| Resultado | Hasta 20 días laborables |
+| Voucher | Validez general de 1 año |
+| Retake | Requiere entregar reporte en el primer intento |
+
+Más detalle en [[03-estructura-y-reglas-examen-cdsa]] y [[fuentes-cdsa]].
+
 ## Qué significa prepararse bien
 
 Prepararse bien no es memorizar todos los comandos. Es tener un método estable.
@@ -41,6 +55,8 @@ Checklist recomendado:
 - Sé documentar un hallazgo en formato breve.
 - He preparado mi entorno de notas.
 - He validado condiciones oficiales del voucher.
+- He leído [[03-estructura-y-reglas-examen-cdsa]].
+- He preparado la estrategia de [[04-estrategia-7-dias-cdsa]].
 
 > [!TIP]
 > Si todavía dependes de copiar consultas sin entender qué campo estás usando, espera antes de consumir el voucher. Practica pivotes pequeños hasta poder explicar cada paso.
@@ -92,5 +108,4 @@ flowchart TD
 En CDSA gana quien investiga ordenado, no quien memoriza más comandos.
 ```
 
-Relacionado: [[CDSA]], [[01-metodologia-investigacion-cdsa]], [[02-checklist-hunting-elastic-windows-zeek]], [[plantilla-respuesta-examen-cdsa]].
-
+Relacionado: [[CDSA]], [[01-metodologia-investigacion-cdsa]], [[02-checklist-hunting-elastic-windows-zeek]], [[03-estructura-y-reglas-examen-cdsa]], [[04-estrategia-7-dias-cdsa]], [[plantilla-respuesta-examen-cdsa]].

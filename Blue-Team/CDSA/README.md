@@ -11,8 +11,11 @@ Tener una guía clara y operativa para practicar antes del examen final, sin dep
 1. [[00-examen-final-y-voucher-cdsa]]
 2. [[01-metodologia-investigacion-cdsa]]
 3. [[02-checklist-hunting-elastic-windows-zeek]]
-4. [[plantilla-respuesta-examen-cdsa]]
-5. Repasar [[06-elastic-hunting-stuxbot-windows-zeek-cdsa]]
+4. [[03-estructura-y-reglas-examen-cdsa]]
+5. [[04-estrategia-7-dias-cdsa]]
+6. [[plantilla-respuesta-examen-cdsa]]
+7. [[fuentes-cdsa]]
+8. Repasar [[06-elastic-hunting-stuxbot-windows-zeek-cdsa]]
 
 ## Áreas que conviene dominar
 
@@ -23,6 +26,6 @@ Tener una guía clara y operativa para practicar antes del examen final, sin dep
 | [[Zeek]] | Evidencia de red: conexiones, DNS, HTTP, SSL |
 | [[Threat-Intelligence]] | IOCs, TTPs, relevancia y validación |
 | [[Detection-Engineering]] | Convertir señales en hipótesis y detecciones |
+| [[security-incident-reporting|Security Incident Reporting]] | Comunicar hallazgos con claridad profesional |
 
-Relacionado: [[Blue-Team]], [[SIEM]], [[Elastic]], [[Windows]], [[Redes]], [[Threat-Intelligence]], [[Detection-Engineering]].
-
+Relacionado: [[Blue-Team]], [[SIEM]], [[Elastic]], [[Windows]], [[Redes]], [[Threat-Intelligence]], [[Detection-Engineering]], [[fuentes-cdsa]].
