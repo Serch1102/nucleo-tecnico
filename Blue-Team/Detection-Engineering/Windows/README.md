@@ -14,6 +14,8 @@ Organizar conceptos prácticos para investigar:
 - Uso de ETW para complementar Sysmon en hunting y DFIR.
 - Uso de `Get-WinEvent` para consultar logs Windows, Sysmon, ETW y `.evtx`.
 - Comparativa práctica entre `Get-WinEvent`, ETW, Sysmon y SilkETW.
+- Hunting práctico en Elastic/Kibana con logs Windows, Sysmon, PowerShell y Zeek.
+- Apuntes orientados al examen HTB CDSA con voucher: metodología, campos, errores comunes y formato de respuesta.
 - Equivalencias entre Trend Micro Vision One, Cortex XSIAM/XDR y Microsoft Sentinel.
 
 > [!WARNING]
@@ -27,6 +29,7 @@ Organizar conceptos prácticos para investigar:
 4. [[03-equivalencias-tmv1-cortex-sentinel]]
 5. [[04-etw-parent-pid-spoofing-y-dotnet-assemblies]]
 6. [[05-comparativa-get-winevent-etw-sysmon]]
+7. [[06-elastic-hunting-stuxbot-windows-zeek-cdsa]]
 
 ## Regla mental
 
@@ -41,6 +44,7 @@ Get-WinEvent consulta eventos.
 Sysmon genera eventos defensivos enriquecidos.
 ETW expone telemetría profunda de Windows.
 SilkETW consume ETW para capturar datos específicos.
+Elastic/Kibana cruza telemetría endpoint, Windows, PowerShell y red.
 ```
 
-Relacionado: [[Detection-Engineering]], [[Windows]], [[SIEM]], [[Cortex-XSIAM]], [[etw-event-tracing-for-windows]], [[conceptos-basicos-sysmon]], [[get-winevent]].
+Relacionado: [[Detection-Engineering]], [[Windows]], [[SIEM]], [[Cortex-XSIAM]], [[etw-event-tracing-for-windows]], [[conceptos-basicos-sysmon]], [[get-winevent]], [[Elastic]], [[Kibana]], [[Zeek]], [[CDSA]].
