@@ -9,10 +9,10 @@ Nota índice para Elastic Stack como SIEM y KQL aplicado a SOC.
 3. [[02-kql-para-soc]]
 4. [[03-use-case-development-siem]]
 5. [[04-ejemplos-deteccion-msbuild]]
+6. [[Kibana]]
 
 ## Conexiones
 
 Elastic se apoya en fundamentos de [[SIEM]], [[Windows]] y [[Redes]]. Sus consultas KQL ayudan a investigar eventos, crear detecciones y validar casos de uso.
 
-Relacionado: [[SIEM]], [[Windows]], [[Redes]], [[Cortex-XSIAM]].
-
+Relacionado: [[SIEM]], [[Windows]], [[Redes]], [[Kibana]], [[CDSA]], [[Cortex-XSIAM]].

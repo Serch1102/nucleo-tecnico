@@ -1,0 +1,28 @@
+# CDSA
+
+Notas para preparar el tramo final de CDSA: metodología, hunting, evidencias, respuesta y gestión del voucher.
+
+## Objetivo
+
+Tener una guía clara y operativa para practicar antes del examen final, sin depender de memoria ni de apuntes dispersos.
+
+## Orden recomendado
+
+1. [[00-examen-final-y-voucher-cdsa]]
+2. [[01-metodologia-investigacion-cdsa]]
+3. [[02-checklist-hunting-elastic-windows-zeek]]
+4. [[plantilla-respuesta-examen-cdsa]]
+5. Repasar [[06-elastic-hunting-stuxbot-windows-zeek-cdsa]]
+
+## Áreas que conviene dominar
+
+| Área | Por qué importa |
+|---|---|
+| [[Elastic]] / [[Kibana]] | Búsqueda, filtros, pivotes y lectura de eventos |
+| [[Windows]] | Event IDs, procesos, PowerShell, autenticación y Sysmon |
+| [[Zeek]] | Evidencia de red: conexiones, DNS, HTTP, SSL |
+| [[Threat-Intelligence]] | IOCs, TTPs, relevancia y validación |
+| [[Detection-Engineering]] | Convertir señales en hipótesis y detecciones |
+
+Relacionado: [[Blue-Team]], [[SIEM]], [[Elastic]], [[Windows]], [[Redes]], [[Threat-Intelligence]], [[Detection-Engineering]].
+

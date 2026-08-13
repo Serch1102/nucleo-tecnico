@@ -19,6 +19,7 @@ Carpeta de estudio y operación sobre Elastic Stack aplicado a SIEM, KQL para an
 3. [[02-kql-para-soc]]
 4. [[03-use-case-development-siem]]
 5. [[04-ejemplos-deteccion-msbuild]]
+6. [[Kibana]]
 
 ## Estado
 
@@ -29,6 +30,7 @@ Carpeta de estudio y operación sobre Elastic Stack aplicado a SIEM, KQL para an
 | [[02-kql-para-soc]] | Primera versión |
 | [[03-use-case-development-siem]] | Primera versión |
 | [[04-ejemplos-deteccion-msbuild]] | Primera versión |
+| [[Kibana]] | Primera versión |
 
 ## Relación entre notas
 
@@ -40,4 +42,4 @@ Elastic como SIEM
 -> Ejemplos de detección MSBuild
 ```
 
-Relacionado: [[00-elastic-stack-como-siem]], [[02-kql-para-soc]], [[03-use-case-development-siem]].
+Relacionado: [[00-elastic-stack-como-siem]], [[02-kql-para-soc]], [[03-use-case-development-siem]], [[Kibana]], [[CDSA]].
