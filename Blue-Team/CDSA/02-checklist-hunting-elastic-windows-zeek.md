@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Checklist rápido para buscar evidencias típicas en un escenario defensivo con [[Elastic]], [[Kibana]], [[Windows]], [[conceptos-basicos-sysmon]] y [[Zeek]].
+Checklist rápido para buscar evidencias típicas en un escenario defensivo con [[Elastic]], [[Kibana]], [[Splunk]], [[Windows]], [[conceptos-basicos-sysmon]] y [[Zeek]].
 
 > [!WARNING]
 > Los nombres exactos de índices y campos pueden variar según el laboratorio, parser, integración o versión. Validar siempre con los campos disponibles en el entorno.
@@ -75,11 +75,22 @@ Buenas prácticas:
 - Ordenar por timestamp.
 - Guardar valores clave: host, usuario, proceso, IP, dominio, hash.
 
+## Splunk/SPL
+
+Buenas prácticas:
+
+- Empezar por `index`, `sourcetype` y rango temporal.
+- Usar `table` para aislar campos útiles.
+- Usar `stats count by` para entender frecuencia.
+- Usar `rex` cuando necesites extraer campos de texto.
+- Usar `lookup` como enriquecimiento, no como veredicto.
+- Acotar antes de usar `transaction`.
+
 ## Mini flujo de hunting
 
 ```mermaid
 flowchart LR
-  A["IOC o pista"] --> B["Buscar en Elastic"]
+  A["IOC o pista"] --> B["Buscar en SIEM"]
   B --> C["Identificar entidad"]
   C --> D["Pivotar a Windows/Sysmon"]
   C --> E["Pivotar a Zeek"]
@@ -106,5 +117,4 @@ Red explica con quién habló.
 Tiempo une las dos historias.
 ```
 
-Relacionado: [[CDSA]], [[01-metodologia-investigacion-cdsa]], [[06-elastic-hunting-stuxbot-windows-zeek-cdsa]], [[Elastic]], [[Kibana]], [[Zeek]], [[Windows]].
-
+Relacionado: [[CDSA]], [[01-metodologia-investigacion-cdsa]], [[06-elastic-hunting-stuxbot-windows-zeek-cdsa]], [[Elastic]], [[Kibana]], [[Splunk]], [[Zeek]], [[Windows]].

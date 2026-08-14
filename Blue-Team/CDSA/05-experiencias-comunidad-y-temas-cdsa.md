@@ -65,7 +65,7 @@ La mayoría de experiencias públicas describen CDSA como:
 | Herramienta | Uso probable de estudio |
 |---|---|
 | Elastic/Kibana | búsqueda y hunting en logs |
-| Splunk | algunas experiencias mencionan práctica equivalente en SIEM |
+| [[Splunk]] | algunas experiencias mencionan práctica equivalente en SIEM |
 | Zeek | análisis de tráfico de red |
 | Volatility | memoria forense, si hay dump de memoria |
 | Eric Zimmerman Tools / EZ Tools | artefactos Windows |
@@ -128,4 +128,3 @@ El examen evalúa investigación + reporte, no memoria de flags.
 - [[04-estrategia-7-dias-cdsa]]
 - [[security-incident-reporting]]
 - [[fuentes-cdsa]]
-

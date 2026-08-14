@@ -24,6 +24,7 @@ flowchart LR
   BT --> DE["Detection Engineering"]
   BT --> CDSA["CDSA"]
   SIEM --> Elastic["Elastic"]
+  SIEM --> Splunk["Splunk"]
   SIEM --> XSIAM["Cortex-XSIAM"]
   CTI --> Hunt["Threat Hunting"]
   CTI --> DE
@@ -33,4 +34,4 @@ flowchart LR
   DE --> WindowsDE["Windows detection notes"]
 ```
 
-Relacionado: [[CDSA]], [[Detection-Engineering]], [[Redes]], [[Windows]], [[SIEM]], [[Threat-Intelligence]], [[Elastic]], [[Cortex-XSIAM]].
+Relacionado: [[CDSA]], [[Detection-Engineering]], [[Redes]], [[Windows]], [[SIEM]], [[Threat-Intelligence]], [[Elastic]], [[Splunk]], [[Cortex-XSIAM]].
