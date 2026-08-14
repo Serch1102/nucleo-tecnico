@@ -14,6 +14,8 @@ Mapa de preparación para el examen final de **HTB Certified Defensive Security 
 | [[02-checklist-hunting-elastic-windows-zeek]] | Checklist práctico para hunting con Elastic, Windows, Sysmon, PowerShell y Zeek |
 | [[03-estructura-y-reglas-examen-cdsa]] | Estructura pública del examen, reglas oficiales y puntos a validar |
 | [[04-estrategia-7-dias-cdsa]] | Estrategia de gestión del tiempo durante la ventana de examen |
+| [[05-experiencias-comunidad-y-temas-cdsa]] | Temas recurrentes publicados por la comunidad sin spoilers |
+| [[06-compartir-confirmacion-monitoring-cdsa]] | Dónde compartir la confirmación de HTB sobre monitoring |
 | [[plantilla-respuesta-examen-cdsa]] | Plantilla para documentar respuestas y evidencias |
 | [[fuentes-cdsa]] | Fuentes oficiales y comunitarias consultadas |
 

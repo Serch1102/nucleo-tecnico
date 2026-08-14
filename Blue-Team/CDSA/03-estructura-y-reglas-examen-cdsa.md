@@ -1,6 +1,6 @@
 # Estructura y reglas del examen CDSA
 
-Investigado el 2026-08-13.
+Investigado el 2026-08-13. Actualizado el 2026-08-14 con confirmación de HTB Support sobre monitoring.
 
 ## Idea clave
 
@@ -24,6 +24,18 @@ No está planteado como un test de preguntas tipo multiple choice. El valor est�
 | Resultado | Hasta 20 días laborables |
 | Voucher | Validez general de 1 año |
 | Segundo intento | Requiere haber entregado reporte en el primer intento |
+| Monitoring/proctoring | HTB Support confirmó que CDSA no requiere equipo de monitorización |
+
+## Confirmación oficial por soporte
+
+HTB Support confirmó por email el 2026-08-13:
+
+- CDSA no requiere equipo de monitorización.
+- La ventana de examen es de 7 días.
+- Los 7 días incluyen la redacción del reporte.
+
+> [!NOTE]
+> Esta confirmación resuelve la duda operativa sobre cámara/proctoring. Aun así, antes de iniciar el examen conviene revisar el dashboard y condiciones vigentes de HTB Academy.
 
 ## Flujo oficial del examen
 
@@ -149,6 +161,7 @@ La trampa mental es pensar que cuando tienes flags ya está todo. En CDSA, el re
 - [[CDSA]]
 - [[00-examen-final-y-voucher-cdsa]]
 - [[04-estrategia-7-dias-cdsa]]
+- [[05-experiencias-comunidad-y-temas-cdsa]]
+- [[06-compartir-confirmacion-monitoring-cdsa]]
 - [[plantilla-respuesta-examen-cdsa]]
 - [[fuentes-cdsa]]
-

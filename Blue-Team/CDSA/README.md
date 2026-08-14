@@ -13,9 +13,11 @@ Tener una guía clara y operativa para practicar antes del examen final, sin dep
 3. [[02-checklist-hunting-elastic-windows-zeek]]
 4. [[03-estructura-y-reglas-examen-cdsa]]
 5. [[04-estrategia-7-dias-cdsa]]
-6. [[plantilla-respuesta-examen-cdsa]]
-7. [[fuentes-cdsa]]
-8. Repasar [[06-elastic-hunting-stuxbot-windows-zeek-cdsa]]
+6. [[05-experiencias-comunidad-y-temas-cdsa]]
+7. [[06-compartir-confirmacion-monitoring-cdsa]]
+8. [[plantilla-respuesta-examen-cdsa]]
+9. [[fuentes-cdsa]]
+10. Repasar [[06-elastic-hunting-stuxbot-windows-zeek-cdsa]]
 
 ## Áreas que conviene dominar
 
