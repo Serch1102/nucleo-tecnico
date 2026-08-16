@@ -197,6 +197,6 @@ ruta del binario, usuario, privilegios, creación de dumps y actividad posterior
 - Enfócate en comportamiento: proceso origen -> acceso a LSASS.
 - Diferencia acceso legítimo de seguridad vs acceso desde ruta rara o proceso no habitual.
 - Correlaciona con autenticaciones posteriores.
+- Para preguntas de examen sobre dumps, usa [[07-estrategia-lsass-dump-examen]] para no confundir `SourceImage`, `TargetImage`, `CallTrace` y `TargetFilename`.
 
-Relacionado: [[registros-eventos-windows-utiles]], [[03-equivalencias-tmv1-cortex-sentinel]], [[Cortex-XSIAM]], [[SIEM]].
-
+Relacionado: [[registros-eventos-windows-utiles]], [[03-equivalencias-tmv1-cortex-sentinel]], [[07-estrategia-lsass-dump-examen]], [[Cortex-XSIAM]], [[SIEM]].

@@ -15,9 +15,10 @@ Tener una guía clara y operativa para practicar antes del examen final, sin dep
 5. [[04-estrategia-7-dias-cdsa]]
 6. [[05-experiencias-comunidad-y-temas-cdsa]]
 7. [[06-compartir-confirmacion-monitoring-cdsa]]
-8. [[plantilla-respuesta-examen-cdsa]]
-9. [[fuentes-cdsa]]
-10. Repasar [[06-elastic-hunting-stuxbot-windows-zeek-cdsa]]
+8. [[07-estrategia-lsass-dump-examen]]
+9. [[plantilla-respuesta-examen-cdsa]]
+10. [[fuentes-cdsa]]
+11. Repasar [[06-elastic-hunting-stuxbot-windows-zeek-cdsa]]
 
 ## Áreas que conviene dominar
 
@@ -25,6 +26,7 @@ Tener una guía clara y operativa para practicar antes del examen final, sin dep
 |---|---|
 | [[Elastic]] / [[Kibana]] | Búsqueda, filtros, pivotes y lectura de eventos |
 | [[Windows]] | Event IDs, procesos, PowerShell, autenticación y Sysmon |
+| [[07-estrategia-lsass-dump-examen]] | Método mental para no confundir campos al buscar dumps de LSASS |
 | [[Zeek]] | Evidencia de red: conexiones, DNS, HTTP, SSL |
 | [[Threat-Intelligence]] | IOCs, TTPs, relevancia y validación |
 | [[Detection-Engineering]] | Convertir señales en hipótesis y detecciones |

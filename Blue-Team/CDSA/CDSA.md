@@ -16,6 +16,7 @@ Mapa de preparación para el examen final de **HTB Certified Defensive Security 
 | [[04-estrategia-7-dias-cdsa]] | Estrategia de gestión del tiempo durante la ventana de examen |
 | [[05-experiencias-comunidad-y-temas-cdsa]] | Temas recurrentes publicados por la comunidad sin spoilers |
 | [[06-compartir-confirmacion-monitoring-cdsa]] | Dónde compartir la confirmación de HTB sobre monitoring |
+| [[07-estrategia-lsass-dump-examen]] | Estrategia mental para encontrar dumps de LSASS y responder el campo correcto |
 | [[plantilla-respuesta-examen-cdsa]] | Plantilla para documentar respuestas y evidencias |
 | [[fuentes-cdsa]] | Fuentes oficiales y comunitarias consultadas |
 

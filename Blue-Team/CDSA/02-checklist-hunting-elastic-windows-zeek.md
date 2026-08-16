@@ -105,6 +105,7 @@ flowchart LR
 - PowerShell ofuscado con conexión externa.
 - `rundll32.exe`, `regsvr32.exe`, `mshta.exe` o `wscript.exe` con argumentos raros.
 - Acceso a `lsass.exe` desde proceso no esperado.
+- Dump de LSASS: separar `SourceImage`, `TargetImage`, `CallTrace` y `TargetFilename`.
 - Conexiones a dominios recién vistos o raros.
 - Descarga de ejecutable seguida de ejecución.
 - Actividad de red justo después de un proceso sospechoso.
@@ -117,4 +118,4 @@ Red explica con quién habló.
 Tiempo une las dos historias.
 ```
 
-Relacionado: [[CDSA]], [[01-metodologia-investigacion-cdsa]], [[06-elastic-hunting-stuxbot-windows-zeek-cdsa]], [[Elastic]], [[Kibana]], [[Splunk]], [[Zeek]], [[Windows]].
+Relacionado: [[CDSA]], [[01-metodologia-investigacion-cdsa]], [[07-estrategia-lsass-dump-examen]], [[06-elastic-hunting-stuxbot-windows-zeek-cdsa]], [[Elastic]], [[Kibana]], [[Splunk]], [[Zeek]], [[Windows]].
