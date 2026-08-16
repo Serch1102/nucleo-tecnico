@@ -12,6 +12,7 @@ Entender qué es Splunk, cómo se organiza su arquitectura básica y cómo usar 
 |---|---|
 | [[00-introduccion-splunk-y-spl]] | Base práctica de Splunk, arquitectura, SPL y comparación con Elastic/XSIAM |
 | [[01-identificar-datos-y-campos-en-splunk]] | Descubrir índices, sourcetypes, sources, campos y modelos de datos |
+| [[02-deteccion-intrusion-splunk-escenario-real]] | Investigar una intrusión con Sysmon, DCSync, LSASS y alertas en Splunk |
 
 ## Uso recomendado
 
@@ -20,6 +21,7 @@ Entender qué es Splunk, cómo se organiza su arquitectura básica y cómo usar 
 3. Aprender búsquedas SPL básicas.
 4. Practicar filtros por índice, `sourcetype`, `host`, `EventCode` y tiempo.
 5. Usar `table`, `stats`, `eval`, `rex`, `lookup` y `transaction`.
-6. Comparar SPL con [[Elastic]]/KQL y [[Cortex-XSIAM]]/XQL.
+6. Practicar hunting con [[02-deteccion-intrusion-splunk-escenario-real]].
+7. Comparar SPL con [[Elastic]]/KQL y [[Cortex-XSIAM]]/XQL.
 
 Relacionado: [[SIEM]], [[Elastic]], [[Cortex-XSIAM]], [[Kibana]], [[CDSA]].

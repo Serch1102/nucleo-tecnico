@@ -6,6 +6,7 @@ Nota índice para Splunk como SIEM y SPL aplicado a investigación SOC.
 
 1. [[00-introduccion-splunk-y-spl]]
 2. [[01-identificar-datos-y-campos-en-splunk]]
+3. [[02-deteccion-intrusion-splunk-escenario-real]]
 
 ## Conexiones
 
